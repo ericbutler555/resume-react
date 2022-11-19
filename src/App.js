@@ -1,5 +1,4 @@
 import "./scss/App.scss";
-import "./components/Footer";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import CurrentJob from "./components/CurrentJob";
@@ -21,4 +20,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
