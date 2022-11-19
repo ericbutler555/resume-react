@@ -45,7 +45,7 @@ function Hero() {
           </li>
         </ul>
 
-        <p class="scroll-down">
+        <p className="scroll-down">
           <a href="#work" title="See some work">
             <img src={process.env.PUBLIC_URL + "/icons/chevron-down.svg"} alt="Scroll down" width="30" />
           </a>
