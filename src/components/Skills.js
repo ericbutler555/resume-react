@@ -1,31 +1,14 @@
+import { useEffect, useState } from "react";
 import "../scss/Skills.scss";
 
 function Skills() {
-  // prettier-ignore
-  const skills = [
-    "Semantic HTML",
-    "CSS, Sass & Less",
-    "JavaScript & ES6",
-    "Angular",
-    "Next.js",
-    "jQuery",
-    "REST APIs",
-    "Responsive web design",
-    "WordPress & custom themes",
-    "PHP",
-    "SQL",
-    "Kentico CMS",
-    "Adobe Experience Manager",
-    "Gulp.js",
-    "Git & GitHub",
-    "TFS",
-    "HTML email",
-    "Greensock (GSAP)",
-    "Landing pages",
-    "Google Tag Manager & Analytics",
-    "Adobe InDesign, Photoshop, Illustrator & XD",
-    "Figma"
-  ];
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/skills.json`)
+      .then((res) => res.json())
+      .then((data) => setSkills(data));
+  }, []);
 
   return (
     <section id="skills" className="skills">
