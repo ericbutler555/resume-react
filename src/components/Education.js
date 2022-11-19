@@ -1,50 +1,15 @@
+import { useEffect, useState } from "react";
 import "../scss/Education.scss";
 import School from "./School";
 
 function Education() {
-  // prettier-ignore
-  const schools = [
-    {
-      "id": 1,
-      "name": "New York University",
-      "program": "Summer Publishing Institute",
-      "certificate": "Certificate",
-      "location": "New York, NY",
-      "start_date": "June 2007",
-      "end_date": "August 2007",
-      "icon": "./logos/NewYorkUniversity-Logo.png"
-    },
-    {
-      "id": 2,
-      "name": "University of Louisville",
-      "program": "English",
-      "certificate": "Bachelor of Arts",
-      "location": "Louisville, KY",
-      "start_date": "August 2003",
-      "end_date": "December 2006",
-      "icon": "./logos/UniversityOfLouisville-Logo.png"
-    },
-    {
-      "id": 3,
-      "name": "University of Miami",
-      "program": "Entrepreneurship",
-      "certificate": "Transferred",
-      "location": "Coral Gables, FL",
-      "start_date": "August 2001",
-      "end_date": "May 2003",
-      "icon": "./logos/UniversityOfMiami-Logo.png"
-    },
-    {
-      "id": 4,
-      "name": "Trinity High School",
-      "program": null,
-      "certificate": "HS Diploma",
-      "location": "Louisville, KY",
-      "start_date": "August 1997",
-      "end_date": "June 2001",
-      "icon": "./logos/TrinityHS-Logo.png"
-    }
-  ];
+  const [schools, setSchools] = useState([]);
+
+  useEffect(() => {
+    fetch(`${process.env.PUBLIC_URL}/data/schools.json`)
+      .then((res) => res.json())
+      .then((data) => setSchools(data));
+  }, []);
 
   return (
     <section id="education" className="education">
