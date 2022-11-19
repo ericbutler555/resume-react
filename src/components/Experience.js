@@ -5,6 +5,7 @@ function Experience() {
   // prettier-ignore
   const jobs = [
     {
+      "id": 1,
       "is_current": false,
       "company_name": "PriceWeber",
       "position": "Senior Front-End Web Developer",
@@ -25,6 +26,7 @@ function Experience() {
       "company_logo": "./logos/PriceWeber-Logo.png"
     },
     {
+      "id": 2,
       "is_current": false,
       "company_name": "State of Hawaii Department of Labor & Industrial Relations",
       "position": "Program Specialist",
@@ -41,6 +43,7 @@ function Experience() {
       "company_logo": "./logos/StateOfHawaii-Logo.png"
     },
     {
+      "id": 3,
       "is_current": false,
       "company_name": "Harpercollins Publishers",
       "position": "Book Designer",
@@ -55,6 +58,7 @@ function Experience() {
       "company_logo": "./logos/HarperCollins-Logo.png"
     },
     {
+      "id": 4,
       "is_current": false,
       "company_name": "Butler Books",
       "position": "Graphic Designer",
@@ -78,7 +82,7 @@ function Experience() {
 
       <section className="jobs cf">
         {jobs.map((job) => (
-          <Job job={job} />
+          <Job key={job.id} job={job} />
         ))}
       </section>
     </>

@@ -15,7 +15,7 @@ function Hero() {
 
         <ul className="contact-info cf">
           <li>
-            <a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website" target="_blank" rel="noopener">
+            <a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website">
               <img src={process.env.PUBLIC_URL + "/icons/envelope.svg"} alt="Email" width="30" />
               ericbutler555
               <br />
@@ -23,21 +23,21 @@ function Hero() {
             </a>
           </li>
           <li>
-            <a href="https://goo.gl/maps/5BjhKaPbmcu" target="_blank" rel="noopener">
+            <a href="https://goo.gl/maps/5BjhKaPbmcu">
               <img src={process.env.PUBLIC_URL + "/icons/compass.svg"} alt="Location" width="30" />
               Louisville Ky
               <br /> USA
             </a>
           </li>
           <li>
-            <a href="https://github.com/ericbutler555" target="_blank" rel="noopener">
+            <a href="https://github.com/ericbutler555">
               <img src={process.env.PUBLIC_URL + "/icons/github.svg"} alt="Github" width="26" />
               GitHub
               <br /> Profile
             </a>
           </li>
           <li>
-            <a href="https://codepen.io/ericbutler555/pens/public/" target="_blank" rel="noopener">
+            <a href="https://codepen.io/ericbutler555/pens/public/">
               <img src={process.env.PUBLIC_URL + "icons/codepen.svg"} alt="CodePen" width="26" />
               CodePen
               <br /> Pens

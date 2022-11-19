@@ -6,8 +6,8 @@ function Job({ job }) {
         <h4 className="job-employer">{job.company_name}</h4>
         <div className="job-summary">
           <ul>
-            {job.description.map((item) => (
-              <li>{item}</li>
+            {job.description.map((item, i) => (
+              <li key={i}>{item}</li>
             ))}
           </ul>
         </div>

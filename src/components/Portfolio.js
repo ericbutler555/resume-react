@@ -93,7 +93,7 @@ function Portfolio() {
 
       <div className="sites cf">
         {sites.map((site) => (
-          <Site site={site} />
+          <Site key={site.id} site={site} />
         ))}
       </div>
     </section>
