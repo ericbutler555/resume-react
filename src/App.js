@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./scss/App.scss";
 import "./components/Footer";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="root">
+    <div className="app">
       <Hero />
       <Portfolio />
       <CurrentJob />

@@ -26,8 +26,8 @@ $darkBorderColor: #aaa;
 // media queries:
 
 $iphone6: "min-width: 667px";
-$tablet:  "min-width: 768px";
-$laptop:  "min-width: 1200px";
+$tablet: "min-width: 768px";
+$laptop: "min-width: 1200px";
 
 // mixins:
 
@@ -45,51 +45,4 @@ $laptop:  "min-width: 1200px";
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2em;
-}
-
-// globals:
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-body {
-  font-family: $sansStack;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: $textColor;
-}
-h1, h2, h3, h4, h5, h6, ul, li, p {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-ul {
-  padding-left: 1.2em;
-}
-address {
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-// clearfix helper class:
-.cf:before,
-.cf:after {
-  content: " ";
-  display: table;
-}
-.cf:after {
-  clear: both;
 }
