@@ -3,7 +3,8 @@ import "../scss/Hero.scss";
 function Hero() {
   const scrollToSection = (e) => {
     e.preventDefault();
-    const destination = document.querySelector(e.target.hash);
+    const href = e.target.closest("a").getAttribute("href");
+    const destination = document.querySelector(href);
     destination.scrollIntoView({ behavior: "smooth" });
   };
 
