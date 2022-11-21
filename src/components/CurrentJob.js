@@ -5,9 +5,12 @@ function CurrentJob() {
   const [job, setJob] = useState({});
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/data/current-job.json`)
+    fetch(`${process.env.PUBLIC_URL}/data/experience.json`)
       .then((res) => res.json())
-      .then((data) => setJob(data));
+      .then((data) => {
+        const currentJob = data.find(x => x.is_current);
+        setJob(currentJob);
+      });
   }, []);
 
   return (

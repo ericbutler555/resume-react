@@ -8,7 +8,10 @@ function Experience() {
   useEffect(() => {
     fetch(`${process.env.PUBLIC_URL}/data/experience.json`)
       .then((res) => res.json())
-      .then((data) => setJobs(data));
+      .then((data) => {
+        const oldJobs = data.filter(x => !x.is_current);
+        setJobs(oldJobs);
+      });
   }, []);
 
   return (
