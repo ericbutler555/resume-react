@@ -21,6 +21,8 @@ Simple single-page app (SPA) built with plain React JS to serve as my online res
 - Dynamic HTML attributes using `attr={val}` notation
 - Ternary operators to run `if/else` conditions when outputting HTML
 - Optional chaining (`obj?.prop`) to prevent runtime errors during hydration
+- `.scrollIntoView()` to enable animated scrolling to anchor links
+- Native CSS `animation` function using `@keyframes`
 - Native browser lazy-loading of images using new `loading="lazy"` attribute
 - Sass `_variables.scss` partial for global Sass variable definitions
 - Sass `mixins` for style injection
