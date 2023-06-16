@@ -10,7 +10,7 @@ Simple single-page app (SPA) built with plain React JS to serve as my online res
 
 ## Included Features
 
-- Functional components to make sections modular and scope styles
+- Function components to make sections modular and scope styles
 - `useState` hooks to initialize and set data variables
 - `useEffect` hooks to update variable state on component render
 - `fetch()` to make API calls to pull data into components
