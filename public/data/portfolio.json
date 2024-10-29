@@ -10,6 +10,15 @@
   },
   {
     "id": 2,
+    "title": "Rural 1st",
+    "link": "https://www.rural1st.com/",
+    "is_active": true,
+    "screenshot": "./screenshots/rural1st-2023.jpg",
+    "year": "2023",
+    "tech_stack": ["Progress Sitefinity CMS", ".NET MVC", "Razor", "Azure Cloud", "Bootstrap"]
+  },
+  {
+    "id": 3,
     "title": "Into the Dust",
     "link": "https://intothedustbook.netlify.app/",
     "is_active": true,
@@ -18,19 +27,10 @@
     "tech_stack": ["Next.js", "React", "Netlify", "CSS Modules"]
   },
   {
-    "id": 3,
-    "title": "Rural 1st",
-    "link": "https://rural1st.com/",
-    "is_active": true,
-    "screenshot": "./screenshots/rural1st.jpg",
-    "year": "2020",
-    "tech_stack": ["Kentico CMS", "HTML", "Sass", "Bootstrap", "JS"]
-  },
-  {
     "id": 4,
     "title": "Early Times Bottled-in-Bond",
-    "link": "https://www.earlytimesbottledinbond.com/",
-    "is_active": true,
+    "link": null,
+    "is_active": false,
     "screenshot": "./screenshots/etbib.jpg",
     "year": "2018",
     "tech_stack": ["Docker", "WordPress", "PHP", "HTML", "Sass", "JS"]
@@ -38,8 +38,8 @@
   {
     "id": 5,
     "title": "Hershey Solutions",
-    "link": "https://www.hersheys.com/hersheysolutions/en_us/home.html",
-    "is_active": true,
+    "link": null,
+    "is_active": false,
     "screenshot": "./screenshots/hersheysolutions.jpg",
     "year": "2018",
     "tech_stack": ["Adobe Experience Manager", "CSS", "JS"]
