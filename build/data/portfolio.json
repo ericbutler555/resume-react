@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Farm Credit Mid-America",
+    "link": "https://www.fcma.com/",
+    "is_active": true,
+    "screenshot": "./screenshots/fcma.jpg",
+    "year": "2023",
+    "tech_stack": ["Progress Sitefinity CMS", ".NET MVC", "Razor", "Azure Cloud", "Bootstrap"]
+  },
+  {
+    "id": 2,
+    "title": "Rural 1st",
+    "link": "https://www.rural1st.com/",
+    "is_active": true,
+    "screenshot": "./screenshots/rural1st-2023.jpg",
+    "year": "2023",
+    "tech_stack": ["Progress Sitefinity CMS", ".NET MVC", "Razor", "Azure Cloud", "Bootstrap"]
+  },
+  {
+    "id": 3,
+    "title": "Into the Dust",
+    "link": "https://intothedustbook.netlify.app/",
+    "is_active": true,
+    "screenshot": "./screenshots/intothedust2.jpg",
+    "year": "2021",
+    "tech_stack": ["Next.js", "React", "Netlify", "CSS Modules"]
+  },
+  {
+    "id": 4,
+    "title": "Early Times Bottled-in-Bond",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/etbib.jpg",
+    "year": "2018",
+    "tech_stack": ["Docker", "WordPress", "PHP", "HTML", "Sass", "JS"]
+  },
+  {
+    "id": 5,
+    "title": "Hershey Solutions",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/hersheysolutions.jpg",
+    "year": "2018",
+    "tech_stack": ["Adobe Experience Manager", "CSS", "JS"]
+  },
+  {
+    "id": 6,
+    "title": "Alliance for Substance Abuse Progress",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/asap.jpg",
+    "year": "2017",
+    "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+  },
+  {
+    "id": 7,
+    "title": "Korbel California Champagne",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/korbel.jpg",
+    "year": "2017",
+    "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+  },
+  {
+    "id": 8,
+    "title": "Canadian Mist",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/canadianmist.jpg",
+    "year": "2016",
+    "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+  },
+  {
+    "id": 9,
+    "title": "Norton Children’s Hospital",
+    "link": null,
+    "is_active": false,
+    "screenshot": "./screenshots/nortonchildrens.jpg",
+    "year": "2016",
+    "tech_stack": ["Design", "WordPress", "PHP", "HTML", "CSS", "JS"]
+  }
+]
