@@ -2,7 +2,7 @@ function Site({ site }) {
   return (
     <div className={"site" + (!site.is_active ? " inactive" : "")}>
       {site.link ? (
-        <a href={site.link}>
+        <a href={site.link} target="_blank" rel="noreferrer">
           <img src={site.screenshot} alt={"Screenshot of the " + site.title + " website"} loading="lazy" />
         </a>
       ) : (

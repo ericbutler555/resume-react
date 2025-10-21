@@ -8,7 +8,7 @@ function School({ school }) {
       {school.program && <h4 className="school-program">{school.program}</h4>}
 
       <div className="school-stats">
-        <p className="school-credit">{school.certificate}</p>
+        {school.certificate && <p className="school-credit">{school.certificate}</p>}
         <p className="school-location">{school.location}</p>
         <p className="school-dates">
           {school.start_date} &ndash; {school.end_date}
