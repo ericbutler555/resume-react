@@ -1,6 +1,13 @@
 import "../scss/Footer.scss";
 
 function Footer() {
+  const scrollToSection = (e) => {
+    e.preventDefault();
+    const href = e.target.closest("a").getAttribute("href");
+    const destination = document.querySelector(href);
+    destination.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <footer className="cta">
       <div className="cta-content">
@@ -9,7 +16,7 @@ function Footer() {
           <br />
           Thoughtfully built. Easy to maintain.
         </p>
-        <a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website" className="cta-button">
+        <a onClick={scrollToSection} href="#contact-me" className="cta-button">
           Contact Me
         </a>
       </div>
